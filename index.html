@@ -9,6 +9,8 @@
 
 	<!--  mobile viewport optimized: j.mp/bplateviewport -->
   	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
 
   	<!-- Styles -->
   	<style>
@@ -22,7 +24,10 @@
     }
     .content{
       margin: 6em;
-      min-height: 230px;
+      min-height: 172px;
+    }
+    .words{
+      width: 500px;
     }
     .clear{
       clear: both;
@@ -48,6 +53,9 @@
       min-height: 540px;
       margin: 0 auto;
       background: white;
+      -webkit-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.21);
+      -moz-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.21);
+      box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.21);
     }
     .one{
       background: #2693FF;
@@ -58,9 +66,19 @@
     .three{
       background: #19FFF8;
     }
+    a{
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+    }
     a, a:hover, a:visited{
       color: #2693ff;
       font-weight: 400;
+    }
+    a:hover{
+      cursor: pointer;
       text-decoration: none;
     }
     h1{
@@ -75,8 +93,8 @@
     }
     img{
       -webkit-box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
--moz-box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
-box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
+      -moz-box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
+      box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
     }
     .icons{
       float: right;
@@ -87,6 +105,15 @@ box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
     }
     .icons li i{
       color: #475059;
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+    }
+    .icons li i:hover{
+      color: #2693ff;
+      cursor: pointer;
     }
 
   	</style>
@@ -99,9 +126,8 @@ box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
 <body>
 	<div class="content">
     <div class="words">
-		  <h1>PATRICK COX</br><span>EXPERIENCE DESIGNER</span></h1>
+		  <h1>PATRICK COX</br><span>PRODUCT DESIGNER</span></h1>
 		  <P>I'm currently designing at <a href="http://canopytax.com">Canopy Tax</a>, previously at <a href="http://instructure.com">Instructure</a>.
-      <p><i>Look, my portfolio is broke AF right now, but I'm working on it.</i></p>
     </div>
     <ul class="icons">
       <li><a href="https://twitter.com/pcridesagain"><i class="fa fa-twitter fa-2x"></i></a></li>
