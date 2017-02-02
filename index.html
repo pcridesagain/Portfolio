@@ -22,6 +22,9 @@
       background: #fafbfc;
       margin: 0;
     }
+    h4{
+      color: #475059;
+    }
     .content{
       margin: 6em;
       min-height: 172px;
@@ -32,11 +35,22 @@
     .clear{
       clear: both;
     }
+    .left{
+      float: left;
+    }
+    .col ul{
+      list-style-type: none;
+      padding: 0;
+    }
+    .col ul li{
+      padding-bottom: .4em;
+      font-size: 13px;
+    }
     .words{
       float: left;
     }
     .entry{
-      padding: 3em;
+      padding: 6em;
       color: #fafbfc;
     }
     .entry p{
@@ -49,13 +63,23 @@
     .entry .details{
       width: auto;
       min-width: 710px;
-      max-width: 1080px; /*1280*/
-      min-height: 568px;  /*768*/
+      max-width: 880px; /*1280*/
+      min-height: 870px;  /*768*/
       margin: 0 auto;
-      background: #fafbfc;
-      -webkit-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.21);
-      -moz-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.21);
-      box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.21);
+      /*background: #fafbfc;*/
+      -webkit-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.41);
+      -moz-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.41);
+      box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.41);
+    }
+    .entry .contain{
+      width: auto;
+      min-width: 710px;
+      max-width: 880px; /*1280*/
+      margin: 0 auto;
+      margin-top: 2em;
+    }
+    .contain h4{
+      font-weight: 100;
     }
     .one{
       background: #2693FF;
@@ -116,6 +140,83 @@
       cursor: pointer;
     }
 
+    #page-wrap { width: 720px; margin: 0px auto; padding: 3em 0 3em 0; border-bottom: 1px solid #E1E4E7;}
+    #page-wrap > div { margin: 0 0 50px 30px; min-width: 500px; width: 100%; }
+
+    .group:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+
+    .group { 
+      display: inline-block; 
+    }
+
+    .five-columns .col {
+      width: 20%; 
+      float: left; 
+      padding: 2%;
+    }
+    .contact{
+      padding: 3em 0 3em 0;
+      text-align: center;
+    }
+    .entry i, .entry h4{
+      color: #475059;
+    }
+    .entry i{
+      -o-transition:.3s;
+      -ms-transition:.3s;
+      -moz-transition:.3s;
+      -webkit-transition:.3s;
+      transition:.3s;
+    }
+    .entry i:hover{
+      color: #fafbfc;
+      cursor: pointer;
+    }
+    .entry a{
+      float: right;
+    }
+    .entry h4{
+      display: inline;
+    }
+
+    .empty{
+      background: url(img/empty.jpg) no-repeat center top;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .one .details{
+      background: url(img/canopy/01.png) no-repeat center top;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .two .details{
+      background: url(img/ghostery/01.png) no-repeat center top;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    .three .details{
+      background: url(img/ssh/01.png) no-repeat center top;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    
+
   	</style>
 
 	<!-- fonts -->
@@ -126,7 +227,7 @@
 <body>
 	<div class="content">
     <div class="words">
-		  <h1>PATRICK COX</br><span>PRODUCT DESIGNER</span></h1>
+		  <h1>Patrick Cox</br><span>PRODUCT DESIGNER</span></h1>
 		  <P>I'm currently designing at <a href="http://canopytax.com">Canopy Tax</a>, previously at <a href="http://instructure.com">Instructure</a>.
     </div>
     <ul class="icons">
@@ -136,39 +237,90 @@
     </ul>
 	</div>
   <div class="entry one clear">
-    <div class="details">
-      
+    <div>
+      <div class="details">
+      </div>
+      <div class="contain">
+        <h4>Canopy :: <strong>Import/Map/Dulicates</strong></h4>
+        <a href="#" target= "_blank"><i class="fa fa-dribbble fa-2x"></i></a>
+      </div>
     </div>
   </div>
   <div class="entry two">
-    <div class="details">
-      <!-- <img src="img/entry-img-1.png"/>
-      <p>Marketing Site</p> -->
+    <div>
+      <div class="details">
+      </div>
+      <div class="contain">
+        <h4>Ghostery :: <strong>Path Monitoring Dashboard</strong></h4>
+        <a href="https://dribbble.com/pcridesagain/projects/473238-Ghostery" target= "_blank"><i class="fa fa-dribbble fa-2x"></i></a>
+      </div>
     </div>
   </div>
   <div class="entry three">
-    <div class="details">
-      <!-- <img src="img/entry-img-1.png"/>
-      <p>Leaderboard Chat</br></p> -->
+    <div>
+      <div class="details">
+      </div>
+      <div class="contain">
+        <h4>Stupid Shit Hackathon :: <strong>Concept Site</strong></h4>
+        <a href="https://dribbble.com/pcridesagain/projects/473254-Stupid-Shit-Hackthon" target= "_blank"><i class="fa fa-dribbble fa-2x"></i></a>
+      </div>
     </div>
   </div>
-  <div class="entry one">
-    <div class="details">
-      <!-- <img src="img/entry-img-1.png"/>
-      <p>Monitoring Dashboard</br></p> -->
+
+
+  <div id="page-wrap">    
+    <div class="five-columns group">
+        <div class="col">
+          <h4>Employment</h4>
+          <ul>
+            <li>Canopy Tax</li>
+            <li>Instructure</li>
+            <li>Ghostery</li>
+            <li>Active Network</li>
+            <li>Moki</li>
+            <li>Vivint</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Apps/Sites</h4>
+          <ul>
+            <li>Canvas by Instructure</li>
+            <li>Canvas Catalog</li>
+            <li>Bridge by Instructure</li>
+            <li>Active Events</li>
+            <li>TodoOnline</li>
+            <li>KRCL.org</li>
+            <li>SpoonMe</li>
+            <li>Appigo</li>
+            <li>Health Equity</li>
+            <li>eReplacement Parts</li>
+            <li>BYU Athelics</li>
+            <li>iLiveFit</li>
+            <li>Parktastiq</li>
+            <li>Packet House Grill</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Instructor</h4>
+          <ul>
+            <li>Utah Valley University</li>
+            <li>DevMountain</li>
+            <li>Thinkful</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Writing</h4>
+          <ul>
+            <li>Codrops</li>
+            <li>UX Booth</li>
+            <li>Web Designer Depot</li>
+          </ul>
+        </div>
     </div>
   </div>
-  <div class="entry two">
-    <div class="details">
-      <!-- <img src="img/entry-img-1.png"/>
-      <p>Marketing Site</p> -->
-    </div>
-  </div>
-  <div class="entry three">
-    <div class="details">
-      <!-- <img src="img/entry-img-1.png"/>
-      <p>Leaderboard Chat</br></p> -->
-    </div>
+
+  <div class="contact">
+    <p>Patrick Cox :: <a href="mailto:me@patrick-cox.com">Contact</a></p>
   </div>
   
 
