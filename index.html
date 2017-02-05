@@ -2,228 +2,22 @@
 
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<title>Patrick Cox</title>
+<meta charset="utf-8" />
+  <title>Patrick Cox</title>
+  
+  <!--  mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+  <link rel="shortcut icon" href="img/favicon.png" />
+  <link rel="apple-touch-icon" href="img/favicon.png" />
 
+  <!-- Styles/JS -->
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://use.fontawesome.com/0b25066c94.js"></script>
 
-	<!--  mobile viewport optimized: j.mp/bplateviewport -->
-  	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-    <link rel="shortcut icon" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/favicon.png" />
-
-  	<!-- Styles -->
-  	<style>
-    body{
-      font-family: 'Rubik', sans-serif;
-      font-weight: 300;
-      font-size: 16px;
-      color: #879099;
-      background: #fafbfc;
-      margin: 0;
-    }
-    h4{
-      color: #475059;
-    }
-    .content{
-      margin: 6em;
-      min-height: 172px;
-    }
-    .words{
-      width: 500px;
-    }
-    .clear{
-      clear: both;
-    }
-    .left{
-      float: left;
-    }
-    .col ul{
-      list-style-type: none;
-      padding: 0;
-    }
-    .col ul li{
-      padding-bottom: .4em;
-      font-size: 13px;
-    }
-    .words{
-      float: left;
-    }
-    .entry{
-      padding: 6em;
-      color: #fafbfc;
-    }
-    .entry p{
-      text-align: left;
-      line-height: 1.3em;
-    }
-    .entry span{
-      font-weight: 500;
-    }
-    .entry .details{
-      width: auto;
-      min-width: 710px;
-      max-width: 880px; /*1280*/
-      min-height: 870px;  /*768*/
-      margin: 0 auto;
-      /*background: #fafbfc;*/
-      -webkit-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.41);
-      -moz-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.41);
-      box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.41);
-    }
-    .entry .contain{
-      width: auto;
-      min-width: 710px;
-      max-width: 880px; /*1280*/
-      margin: 0 auto;
-      margin-top: 2em;
-    }
-    .contain h4{
-      font-weight: 100;
-    }
-    .one{
-      background: #2693FF;
-    }
-    .two{
-      background: #17B7E8;
-    }
-    .three{
-      background: #19FFF8;
-    }
-    a{
-      -o-transition:.3s;
-      -ms-transition:.3s;
-      -moz-transition:.3s;
-      -webkit-transition:.3s;
-      transition:.3s;
-    }
-    a, a:hover, a:visited{
-      color: #2693ff;
-      font-weight: 400;
-    }
-    a:hover{
-      cursor: pointer;
-      text-decoration: none;
-    }
-    h1{
-      font-weight: 400;
-      color: #475059;
-    }
-    h1 span{
-      font-weight: 700;
-    }
-    .content p{
-      line-height: 1.4em;
-    }
-    img{
-      -webkit-box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
-      -moz-box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
-      box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.19);
-    }
-    .icons{
-      float: right;
-      list-style-type: none;
-    }
-    .icons li{
-      margin-bottom: 1em;
-    }
-    .icons li i{
-      color: #475059;
-      -o-transition:.3s;
-      -ms-transition:.3s;
-      -moz-transition:.3s;
-      -webkit-transition:.3s;
-      transition:.3s;
-    }
-    .icons li i:hover{
-      color: #2693ff;
-      cursor: pointer;
-    }
-
-    #page-wrap { width: 720px; margin: 0px auto; padding: 3em 0 3em 0; border-bottom: 1px solid #E1E4E7;}
-    #page-wrap > div { margin: 0 0 50px 30px; min-width: 500px; width: 100%; }
-
-    .group:after {
-      visibility: hidden;
-      display: block;
-      font-size: 0;
-      content: " ";
-      clear: both;
-      height: 0;
-    }
-
-    .group { 
-      display: inline-block; 
-    }
-
-    .five-columns .col {
-      width: 20%; 
-      float: left; 
-      padding: 2%;
-    }
-    .contact{
-      padding: 3em 0 3em 0;
-      text-align: center;
-    }
-    .entry i, .entry h4{
-      color: #475059;
-    }
-    .entry i{
-      -o-transition:.3s;
-      -ms-transition:.3s;
-      -moz-transition:.3s;
-      -webkit-transition:.3s;
-      transition:.3s;
-    }
-    .entry i:hover{
-      color: #fafbfc;
-      cursor: pointer;
-    }
-    .entry a{
-      float: right;
-    }
-    .entry h4{
-      display: inline;
-    }
-
-    .empty{
-      background: url(img/empty.jpg) no-repeat center top;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-    .one .details{
-      background: url(img/canopy/01.png) no-repeat center top;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-    .two .details{
-      background: url(img/ghostery/01.png) no-repeat center top;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-    .three .details{
-      background: url(img/ssh/01.png) no-repeat center top;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    
-
-  	</style>
-
-	<!-- fonts -->
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
-	
-	<!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
+
 <body>
 	<div class="content">
     <div class="words">
@@ -238,31 +32,47 @@
 	</div>
   <div class="entry one clear">
     <div>
+      
       <div class="details">
+        <div class="browser">
+          <i class="red" aria-hidden="true"></i>
+          <i class="yellow" aria-hidden="true"></i>
+          <i class="green" aria-hidden="true"></i>
+        </div>
       </div>
       <div class="contain">
-        <h4>Canopy :: <strong>Import/Map/Dulicates</strong></h4>
-        <a href="#" target= "_blank"><i class="fa fa-dribbble fa-2x"></i></a>
+        <h4>Ghostery :: <strong>Path Monitoring Dashboard</strong></h4>
+        <a href="https://dribbble.com/pcridesagain/projects/473238-Ghostery" target= "_blank">VIEW PROJECT <i class="fa fa-long-arrow-right"></i></a>
       </div>
     </div>
   </div>
   <div class="entry two">
     <div>
       <div class="details">
+        <div class="browser">
+          <i class="red" aria-hidden="true"></i>
+          <i class="yellow" aria-hidden="true"></i>
+          <i class="green" aria-hidden="true"></i>
+        </div>
       </div>
       <div class="contain">
-        <h4>Ghostery :: <strong>Path Monitoring Dashboard</strong></h4>
-        <a href="https://dribbble.com/pcridesagain/projects/473238-Ghostery" target= "_blank"><i class="fa fa-dribbble fa-2x"></i></a>
+        <h4>Canopy :: <strong>Import/Export Contacts</strong></h4>
+        <a href="#" target= "_blank">VIEW PROJECT <i class="fa fa-long-arrow-right"></i></a>
       </div>
     </div>
   </div>
   <div class="entry three">
     <div>
       <div class="details">
+        <div class="browser">
+          <i class="red" aria-hidden="true"></i>
+          <i class="yellow" aria-hidden="true"></i>
+          <i class="green" aria-hidden="true"></i>
+        </div>
       </div>
       <div class="contain">
         <h4>Stupid Shit Hackathon :: <strong>Concept Site</strong></h4>
-        <a href="https://dribbble.com/pcridesagain/projects/473254-Stupid-Shit-Hackthon" target= "_blank"><i class="fa fa-dribbble fa-2x"></i></a>
+        <a href="https://dribbble.com/pcridesagain/projects/473254-Stupid-Shit-Hackthon" target= "_blank">VIEW PROJECT <i class="fa fa-long-arrow-right"></i></a>
       </div>
     </div>
   </div>
