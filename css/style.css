@@ -191,7 +191,25 @@
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+      min-height: 1070px;
     }
+    .two.again .details{
+      background: url(../img/slopejunkie/01.png) no-repeat center 20px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 400px;
+    }
+    .one.again .details{
+      background: url(../img/instructure/02.png) no-repeat center 20px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 1280px;
+    }
+
     .browser{
       width: 676px;
       height: 20px;
