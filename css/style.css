@@ -172,14 +172,14 @@
     }
 
     .one .details{
-      background: url(../img/ghostery/01.png) no-repeat center 20px;
+      background: url(../img/concepts/01.png) no-repeat center 20px;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
     }
     .two .details{
-      background: url(../img/canopy/01.png) no-repeat center 20px;
+      background: url(../img/ghostery/01.png) no-repeat center 20px;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
